@@ -51,3 +51,16 @@ body::before {
     border: 2px solid #000;
     background-color: #416a8e;
 }
+
+/* Nabvar */
+.navbar {
+    background-color: rgb(254, 249, 249); /* light grey for the navbar */
+    color: white; /* Text color */
+    padding: 5px 0; /* Adjust based on your design */
+}
+#logo img {
+    max-height: 50px; /* Adjust based on your navbar height */
+    max-width: 100%; /* Maintain aspect ratio */
+    height: auto; /* Ensure the height adjusts automatically */
+    margin: auto 0; /* Center vertically */
+    padding: 5px; /* Optional: Add padding if needed
