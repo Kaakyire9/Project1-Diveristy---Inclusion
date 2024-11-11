@@ -14,6 +14,16 @@
     --light-hightlight-color: #7a9fc2; /* Light highlight color */
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font); /* Use the secondary font for headings */
+    color: var(--primary-color); /* Primary color for headings */
+}
+
+.subheading {
+    color: var(--highlight-color); /* Highlight color for subheadings */
+}
 
 
 /* Global Styles */
@@ -41,7 +51,7 @@ body::before {
 
 
 
-
+/*
 .col-12 {
     border: 2px solid #000;
     background-color: #416a8e;
@@ -50,7 +60,7 @@ body::before {
 .row {
     border: 2px solid #000;
     background-color: #416a8e;
-}
+}*/
 
 /* Nabvar */
 .navbar {
@@ -63,4 +73,5 @@ body::before {
     max-width: 100%; /* Maintain aspect ratio */
     height: auto; /* Ensure the height adjusts automatically */
     margin: auto 0; /* Center vertically */
-    padding: 5px; /* Optional: Add padding if needed
+    padding: 5px; /* Optional: Add padding if needed */
+}
