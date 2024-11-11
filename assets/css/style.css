@@ -38,3 +38,16 @@ body::before {
     opacity: 0.3; /* Adjust the opacity (0.0 to 1.0) */
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
+
+
+
+
+.col-12 {
+    border: 2px solid #000;
+    background-color: #416a8e;
+}
+
+.row {
+    border: 2px solid #000;
+    background-color: #416a8e;
+}
