@@ -37,19 +37,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#stories">Stories</a>
+                        <a class="nav-link" href="index.html#stories">Stories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#get-involved">Get Involved</a>
+                        <a class="nav-link" href="index.html#get-involved">Get Involved</a>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#news-events">News</a>
+                        <a class="nav-link" href="index.html#news-events">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
                 </ul>
                 <form class="d-flex" role="search">
                     <button class="btn btn-outline-success" type="submit">Join Us</button>
@@ -60,14 +60,20 @@
     <!-- Main Content -->
 <main>
     <!-- Share Your Story Form -->
+<!-- Share Your Story Form -->
 <section id="share-your-story" class="py-5 bg-light">
     <div class="container">
       <div class="text-center mb-4">
         <h2 class="font-weight-bold">Share Your Story</h2>
-        <p class="text-muted">We'd love to hear your experiences with diversity and inclusion. Share your story to inspire others!</p>
+        <p class="text-muted">We’d love to hear your experiences with diversity and inclusion. Share your story to inspire others!</p>
       </div>
   
-      <form>
+      <!-- Success Message -->
+      <div id="successMessage" class="alert alert-success d-none text-center" role="alert">
+        Thank you for sharing your story! We appreciate your contribution to our community.
+      </div>
+  
+      <form id="storyForm">
         <div class="row">
           <!-- Name Field -->
           <div class="col-md-6 mb-3">
@@ -88,6 +94,26 @@
           <textarea class="form-control" id="story" rows="6" placeholder="Share your experiences..." required></textarea>
         </div>
   
+        <!-- Video Recording Option -->
+        <div class="mb-3">
+          <label class="form-label">Record a Video (Optional)</label>
+          <div class="input-group">
+            <input type="file" class="form-control" id="videoUpload" accept="video/*" capture="environment">
+            <span class="input-group-text">Upload Video</span>
+          </div>
+          <small class="text-muted">You can also record directly from your device.</small>
+        </div>
+  
+        <!-- Audio Recording Option -->
+        <div class="mb-3">
+          <label class="form-label">Record an Audio Message (Optional)</label>
+          <div class="input-group">
+            <input type="file" class="form-control" id="audioUpload" accept="audio/*" capture="microphone">
+            <span class="input-group-text">Upload Audio</span>
+          </div>
+          <small class="text-muted">Record directly from your device or upload an existing file.</small>
+        </div>
+  
         <!-- Permission to Share -->
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="permission" required>
@@ -104,7 +130,18 @@
     </div>
   </section>
   
-
+  <!-- JavaScript to Show Success Message -->
+  <script>
+    document.getElementById("storyForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form from submitting normally
+  
+      // Hide the form and show the success message
+      document.getElementById("storyForm").classList.add("d-none");
+      document.getElementById("successMessage").classList.remove("d-none");
+    });
+  </script>
+  
+  
 </main>
     <!-- Footer -->
     <!-- Bootstrap Footer with Logo and Newsletter Signup -->
