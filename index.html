@@ -43,7 +43,7 @@
                         <a class="nav-link" href="#">Stories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Get Involved</a>
+                        <a class="nav-link" href="get-involved.html">Get Involved</a>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">News</a>
@@ -471,16 +471,30 @@
                 </div>
             </div>
         </section>
-        <!--Get Invloved Section-->
-        <section class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">Get Involved Section </div>
-                <div class="col-12 col-md-6 col-xl-3">Image Card 1</div>
-                <div class="col-12 col-md-6 col-xl-3">Image card 2</div>
-                <div class="col-12 col-md-6 col-xl-3">Image Card 3</div>
-                <div class="col-12 col-md-6 col-xl-3">Image Card 4</div>
+                <!-- Sidebar -->
+                <div class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                    <!-- Sidebar content goes here -->
+                    <!--Get Invloved Section-->
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-12">Get Involved Section </div>
+                            <div class="col-12 col-md-6 col-xl-3">Image Card 1</div>
+                            <div class="col-12 col-md-6 col-xl-3">Image card 2</div>
+                            <div class="col-12 col-md-6 col-xl-3">Image Card 3</div>
+                            <div class="col-12 col-md-6 col-xl-3">Image Card 4</div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Main content -->
+                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    <!-- Main content goes here -->
+                </main>
             </div>
-        </section>
+        </div>
+
 
         <!--Latest News /Events Section-->
         <section class="container">
@@ -493,7 +507,70 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="mt-auto">
+    <!-- Bootstrap Footer with Logo and Newsletter Signup -->
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+
+                <!-- Logo and About Section -->
+                <div class="col-md-3">
+                    <a id="logo" class="navbar-brand" href="index.html"><img src="assets/images/div-inclu-logo-1.png"
+                            alt="Diversity and inclusion logo"></a>
+                    <p>Our mission is to foster diversity, inclusion, and awareness through community resources and
+                        support for all.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5> Contact</h5>
+                    <p><i class="fas fa-home me-3"></i> Bristol, BS01 012, UK</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@div-inclu.org.uk</p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+
+
+                <!-- Links Section -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#storis" class="text-white">stories</a></li>
+                        <li><a href="#mystory" class="text-white">Share your story</a></li>
+                        <li><a href="#getinvolved" class="text-white">Get-Involved</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Signup Section -->
+                <div class="col-xl-3">
+                    <h5>Newsletter Signup</h5>
+                    <p>Stay updated with our latest resources, events, and news. Subscribe to our newsletter.</p>
+                    <form class="row g-2">
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-outline-secondary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center py-3">
+                <small>&copy; 2024 Diversity & Inclusion. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!--<footer class="mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-12">Contact Us</div>
@@ -501,7 +578,7 @@
                 <div class="col-12 col-xl-6">Social Media links</div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 
