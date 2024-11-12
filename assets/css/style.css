@@ -85,7 +85,83 @@ body::before {
     z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Example font */
+    position: relative;
+}
 
+/* Header Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Example font for headers */
+    color: #333; /* Default color for headers */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #B71C1C; /* Example color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color) /* Example color */
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #666; /* Example color */
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #999; /* Example color */
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #bbb; /* Example color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+}
 
 /*
 .col-12 {
@@ -144,12 +220,31 @@ body::before {
     object-position: center;
 }
 
+.card {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
 .card-img-top {
     width: 100%;
     height: 25vw;
     min-height: 160px;
     object-fit: cover;
   }
+
+  .card-title {
+    color: var(--highlight-color); /* Use your highlight color */
+    font-weight: bold; /* Optional: Make the title bold */
+}
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transform: scale(1.05); /* Slightly scale up the card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
 
  /* .diversity-news {
     background-color: #f8f9fa;
@@ -199,7 +294,7 @@ body::before {
 }
 
 footer {
-    background-color: #B71C1C;
+    background-color: rgba(72, 61, 139, 0.8); /* Dark Slate Blue */
 }
 
 @media (min-width: 576px) {
@@ -224,4 +319,56 @@ footer {
     .custom-card {
         margin-bottom: 60px; /* Margin for extra large screens */
     }
+}
+
+:root {
+    --highlight-color: #FF5722; /* Example highlight color */
+    --primary-color: #00796B;
+    --secondary-color: #333;
+}
+
+/* Subheadings */
+.subheading {
+    color: var(--highlight-color);
+}
+
+/* Links */
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-highlight {
+    background-color: var(--highlight-color);
+    color: white;
+    border: none;
+}
+
+.btn-highlight:hover {
+    background-color: darken(var(--highlight-color), 10%);
+}
+
+/* Important Text */
+.important-text {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+/* Borders and Underlines */
+.highlight-border {
+    border: 2px solid var(--highlight-color);
+}
+
+.highlight-underline {
+    border-bottom: 2px solid var(--highlight-color);
+}
+
+/* Icons */
+.icon-highlight {
+    color: var(--highlight-color);
 }
