@@ -25,9 +25,9 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top mb-4">
         <div class="container">
-            <a id="logo" class="navbar-brand" href="index.html"><img src="assets/images/div-inclu-logo-transparent.png"
+            <a id="logo" class="navbar-brand" href="#index.html"><img src="assets/images/div-inclu-logo-transparent.png"
                     alt="Diversity and inclusion logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,19 +37,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Stories</a>
+                        <a class="nav-link" href="#stories">Stories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="get-involved.html">Get Involved</a>
+                        <a class="nav-link" href="#get-involved">Get Involved</a>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link" href="#news-events">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                 </ul>
                 <form class="d-flex" role="search">
                     <button class="btn btn-outline-success" type="submit">Join Us</button>
@@ -116,7 +116,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <a href="#learn-more" class="btn btn-primary btn-lg mt-3">Join Us</a>
+                <a href="#learn-more" class="btn btn-outline-secondary btn-lg mt-3">Join Us</a>
             </div>
         </div>
     </section>
@@ -161,10 +161,10 @@
     <!-- Main content -->
     <main>
         <!--Inspiring Journey of Hope Section -->
-        <section class="container">
+        <section  id="stories"  class="container">
             <div class="row">
                 <div class="col-12 text-center py-3">
-                    <h2 class="displaying-6"> Inspiring Journey of hope</h2>
+                    <h2 class="display-6"> Inspiring Journey of hope</h2>
                     <p> Discover the resilience and strength in these powerful stories of perseverance and
                         determination. Embrace the beauty of diversity and the boundless potential within each unique
                         journey.</p>
@@ -469,14 +469,14 @@
                 </div>
                 <div class="mt-4">
                     <form class="d-flex justify-content-center" role="search">
-                        <button class="btn btn-outline-success" type="submit">Share your Story!</button>
+                        <a href="mystory.html" class="btn btn-outline-success">Share your Story!</a>
                     </form>
                 </div>
             </div>
         </section>
 
         <!--Get Invloved Section-->
-        <section class="container">
+        <section id="get-involved"  class="container">
             <div class="row">
                 <div class="col-12 text-center py-5">
                     <h2 class="display-6"> Get Involved</h2>
@@ -558,7 +558,7 @@
                                     strategies.</p>
                                 <a href="https://www.enei.org.uk/event/breaking-barriers-advancing-careers-for-disabled-talent/"
                                     alt="opens news at enei.org in new tab" target="_blank" rel="noopener"
-                                    class="btn btn-primary">Read More</a>
+                                    class="btn btn-outline-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -576,7 +576,7 @@
                                     editorial strategy and events with their expertise.
                                 </p>
                                 <a href="https://benews.co.uk/real-estate-balance-launches-edi-survey/"
-                                    class="btn btn-primary">Read More</a>
+                                    class="btn btn-outline-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -593,14 +593,14 @@
                                 <p class="card-text text-muted">Radio 2's Paddy McGuinness has set off on Day 2 of his
                                     Ultra Endurance Cycle Challenge for BBC Children in Need, cycling from Preston to
                                     Kendal</p>
-                                <a href="#" class="btn btn-primary">Read More</a>
+                                <a href="#" class="btn btn-outline-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="#all-news" class="btn btn-outline-primary">View All News & Events</a>
+                    <a href="#all-news" class="btn btn-outline-secondary">View All News & Events</a>
                 </div>
             </div>
         </section>
@@ -631,7 +631,7 @@
 
 
                 <!-- Links Section -->
-                <div class="col-md-3">
+                <div id="contact"  class="col-md-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#home" class="text-white">Home</a></li>
