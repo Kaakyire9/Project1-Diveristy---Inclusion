@@ -64,10 +64,26 @@ body::before {
 
 /* Nabvar */
 .navbar {
-    background-color: rgb(254, 249, 249); /* light grey for the navbar */
-    color: white; /* Text color */
-    padding: 5px 0; /* Adjust based on your design */
+    background-color: #00796B;
+    padding: 5px 0;
 }
+
+.navbar-nav .nav-link,
+.navbar-brand,
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.navbar .btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.navbar .btn-outline-success:hover {
+    color: #00796B;
+    background-color: white;
+}
+
 #logo img {
     max-height: 50px; /* Adjust based on your navbar height */
     max-width: 100%; /* Maintain aspect ratio */
@@ -80,6 +96,16 @@ body::before {
     color: #343a40; /* Dark text color */
     padding: 20px;
     border-radius: 10px;
+}
+
+.image-carousel .carousel-item {
+    height: 400px; /* Adjust this value to your desired height */
+}
+
+.image-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card-img-top {
