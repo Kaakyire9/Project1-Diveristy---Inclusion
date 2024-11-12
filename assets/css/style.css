@@ -25,6 +25,42 @@ h3 {
     color: var(--highlight-color); /* Highlight color for subheadings */
 }
 
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/div-inclu-hero-1.webp') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+    }
+}
 
 /* Global Styles */
 body {
@@ -92,7 +128,7 @@ body::before {
     padding: 5px; /* Optional: Add padding if needed */
 }
 .carousel-item {
-    background-color: #f8f9fa; /* Light background color */
+    background-color: rgba(250, 244, 244, 0.827); /* Light background color */
     color: #343a40; /* Dark text color */
     padding: 20px;
     border-radius: 10px;
@@ -110,13 +146,14 @@ body::before {
 
 .card-img-top {
     width: 100%;
-    height: 15vw;
+    height: 25vw;
+    min-height: 160px;
     object-fit: cover;
   }
 
-  .diversity-news {
+ /* .diversity-news {
     background-color: #f8f9fa;
-}
+} */
 
 .diversity-news h2 {
     font-size: 2.5rem;
@@ -125,7 +162,6 @@ body::before {
 }
 
 .news-item {
-    background-color: #fff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -150,4 +186,42 @@ body::before {
 
 .btn-primary:hover {
     background-color: #0052a3;
+}
+
+@media (max-width: 520px) {
+    .row {
+        gap: 20px;
+    }
+}
+
+.custom-card {
+    margin-bottom: 20px; /* Default margin for small screens */
+}
+
+footer {
+    background-color: #B71C1C;
+}
+
+@media (min-width: 576px) {
+    .custom-card {
+        margin-bottom: 30px; /* Margin for small to medium screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-card {
+        margin-bottom: 40px; /* Margin for medium to large screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-card {
+        margin-bottom: 50px; /* Margin for large screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-card {
+        margin-bottom: 60px; /* Margin for extra large screens */
+    }
 }
