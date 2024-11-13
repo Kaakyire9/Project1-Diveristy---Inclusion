@@ -198,6 +198,7 @@ h6 {
     background-color: white;
 }
 
+
 #logo img {
     max-height: 50px; /* Adjust based on your navbar height */
     max-width: 100%; /* Maintain aspect ratio */
@@ -405,3 +406,22 @@ a:hover {
 .icon-highlight {
     color: var(--highlight-color);
 }
+
+.icon {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+/* Ensure images are responsive */
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
